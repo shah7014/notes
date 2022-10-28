@@ -1,0 +1,38 @@
+.goal--form {
+  margin: 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 12px rgb(0 0 0/ 20%);
+}
+
+.goal--form--label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.goal--form--input {
+  width: 100%;
+  border: 1px solid #ccc;
+  line-height: 1.5rem;
+  padding: 0 0.25rem;
+}
+
+.goal--form--input:focus {
+  outline: none;
+  background-color: #fad0ec;
+  border-color: #8b005d;
+}
+
+.form--action {
+  margin-top: 0.5rem;
+}
+
+.form--action > button {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #8b005d;
+  color: #fff;
+  background-color: #8b005d;
+  cursor: pointer;
+}
