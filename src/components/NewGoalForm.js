@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./NewGoalForm.css";
+import Button from "./Button";
+import classes from "./NewGoalForm.module.css";
 
 const NewGoalForm = (props) => {
   const [newGoal, setNewGoal] = useState("");
@@ -23,22 +24,26 @@ const NewGoalForm = (props) => {
   };
 
   return (
-    <div className="goal--form">
+    <div className={classes["goal--form"]}>
       <form onSubmit={handleSubmit}>
         <label
-          className={`goal--form--label ${isValid ? "" : "invalid"}`}
+          className={`${classes["goal--form--label"]} ${
+            isValid ? "" : classes.invalid
+          }`}
           htmlFor="title"
         >
           Course Goal
         </label>
         <input
-          className={`goal--form--input ${isValid ? "" : "invalid"}`}
+          className={`${classes["goal--form--input"]} ${
+            isValid ? "" : classes.invalid
+          }`}
           id="title"
           value={newGoal}
           onChange={goalChangeHandler}
         />
-        <div className="form--action">
-          <button type="submit">Add Goal</button>
+        <div className={classes["form--action"]}>
+          <Button type="submit">Add Goal</Button>
         </div>
       </form>
     </div>
