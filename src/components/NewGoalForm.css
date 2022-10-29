@@ -19,6 +19,15 @@
   padding: 0 0.25rem;
 }
 
+.goal--form--label.invalid {
+  color: red;
+}
+
+.goal--form--input.invalid {
+  border-color: red;
+  background-color: orangered;
+}
+
 .goal--form--input:focus {
   outline: none;
   background-color: #fad0ec;
